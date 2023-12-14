@@ -4,7 +4,11 @@ const app = express();
 
 app.set('view engine', 'ejs');
 app.get('/', function(request, response) {
-    response.render('users/login');    
+    response.render('layout/main');    
+})
+
+app.get('/login', function(request, response) {
+    response.render('users/login')
 })
 
 app.get("/registration", (request, response) => {
