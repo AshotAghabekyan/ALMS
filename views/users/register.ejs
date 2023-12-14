@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+
+  header {
+    text-align: center;
+    background-color: #f894e2;
+    color: white;
+  }
+
+  main {
+    background: url("https://i.postimg.cc/WpSYkv0h/books-Wall.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+  }
+
+  form {
+    text-align: left;
+    max-width: 400px;
+    height: 340px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+  }
+
+  label {
+    font-size: 14px;
+    color: gray;
+    display: block;
+  }
+
+  input {
+    width: 380px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: 0.8s;
+  }
+
+  input:hover {
+    background-color: #d1c9c9;
+    opacity: 0.6;
+  }
+
+  button {
+    width: 100%;
+    background-color:#f894e2;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.8s;
+  }
+
+  button:hover {
+    background-color: #d1c9c9;
+  }
+
+  .control-panel {
+    text-align: center;
+  }
+
+  .control-panel a {
+    text-decoration: none;
+    transition: 0.8s;
+    color: #474646
+  }
+
+  .control-panel a:hover {
+    opacity: 0.6;
+  }
+
+
+  footer a{
+    text-align: center;
+    padding: 22px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f894e2;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.8s;
+  }
+
+  footer a:hover {
+    color:#d1c9c9;
+  }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://ltdfoto.ru/images/2023/12/13/picsart-transformed.png" width="150" alt="Academy Logo">
+      </header>
+
+        <main>
+          <form action="./routes/users.js">
+            <div>
+                <label for="name">username</label>
+                <input type="text" placeholder="name surname" id="name">
+
+                <label for="user-email">email</label>
+                <input type="email" placeholder="****@gmail.com" id="user-email">
+
+                <label for="password">password</label>
+                <input type="text" placeholder="********" id="password">
+
+                <label for="label-repeat">repeat password</label>
+                <input type="text" placeholder="********" id="password-repeat">
+            </div>
+               
+            <div class="control-panel">
+                <button type="submit" id="submit">Submit</button>
+                <a href="/" id="login-page">return to login</a>
+            </div>
+                
+          </form>
+        </main>
+      
+      <footer class="footer">
+        <a href="https://picsartacademy.am/" target="_blank">Academy Web Site</a>
+      </footer>
+</body>
+</html>

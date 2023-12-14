@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+
+  header {
+    text-align: center;
+    background-color: #f894e2;
+    color: white;
+  }
+
+  main {
+    background: url("https://ltdfoto.ru/images/2023/12/13/books.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+
+  form {
+    align-items: center;
+    max-width: 400px;
+    width: 500px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+  }
+
+  label {
+    font-size: 14px;
+    color: gray;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  input {
+    width: 380px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: 0.8s;
+  }
+
+  input:hover {
+    background-color: #d1c9c9;
+    opacity: 0.6;
+  }
+
+  
+  button {
+    width: 100%;
+    background-color: #f894e2;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.8s;
+  }
+
+  button:hover {
+    background-color: #d1c9c9;
+  }
+
+
+  .helpers {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .helpers a {
+    padding: 20px;
+    text-decoration: none;
+    transition: 0.8s;
+    color: #474646
+  }
+
+  #forgot-passwd:hover {
+    opacity: 0.6;
+  }
+
+
+  #registration:hover {
+    opacity: 0.6;
+  } 
+
+  footer a{
+    text-align: center;
+    padding: 22px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f894e2;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.8s;
+  }
+
+  footer a:hover {
+    color:#d1c9c9;
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="https://ltdfoto.ru/images/2023/12/13/picsart-transformed.png" width="150" alt="Academy Logo">
+  </header>
+
+  <main>
+    <form>    
+      <label for="email">Email</label>
+      <input type="email" placeholder="****@gmail.com" id="emil">
+
+      <label for="password">Password</label>
+      <input type="password"  placeholder="********" id="password">
+
+      <button type="submit">Submit</button>
+
+      <div class="helpers">
+        <a id="forgot-passwd" href="#">Forgot password</a>
+        <a id="registration" href="/registration">Registration</a>
+      </div>
+    
+    </form>
+  </main>
+
+  <footer>
+    <a href="https://picsartacademy.am/" target="_blank">Academy Web Site</a>
+  </footer>
+</body>
+</html>
+
