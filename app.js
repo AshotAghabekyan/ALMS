@@ -15,6 +15,11 @@ app.get("/registration", (request, response) => {
     response.render('users/register');
 })
 
+app.get("/catalog", (request, response) => {
+    response.render("books/index");
+})
+
+
 app.listen(process.env.PORT, ()=> {
     console.log('server run!');
 });
