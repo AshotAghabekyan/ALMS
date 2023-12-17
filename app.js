@@ -16,7 +16,11 @@ app.get("/registration", (request, response) => {
 })
 
 app.get("/catalog", (request, response) => {
-    response.render("books/index");
+    response.render("books/catalog");
+})
+
+app.get("/book-details", (request, response) => {
+    response.render("books/bookDetails");
 })
 
 

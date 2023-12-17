@@ -11,51 +11,55 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100%;
     max-width: 100%;
     background-color: #f9f9f9;
-  }
+    }
 
   header {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     background-color:  #333;
     color: white;
-    min-width: 100%;
+    width: 100%;
+    height: 20%;
   }
 
   main {
     background: url("https://ltdfoto.ru/images/2023/12/13/books.jpg");
     background-size:cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-width: 240px;
-    height: 80vh;
+    height: 60vh;
   }
 
 
   form {
-    align-items: center;
+    width: 100%;
     max-width: 400px;
+    margin: 5%;
     padding: 20px;
     background-color: #f2f2f2;
     border-radius: 25px;
   }
 
-  
+
   label {
     font-size: 14px;
     color: gray;
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 1%;
   }
 
   input {
-    width: 380px;
-    padding: 10px;
-    margin-bottom: 15px;
-    margin-right: 10px;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 3%;
     border: 1px solid #ddd;
     border-radius: 5px;
     transition: 0.8s;
@@ -67,14 +71,14 @@
     opacity: 0.6;
   }
 
-  
+
   button {
     width: 100%;
-    background-color:  #333;
+    height: 40px;
+    margin-bottom: 3%;
+    border: 1px solid #ddd;
     color: white;
-    font-size: 16px;
-    padding: 10px;
-    border: none;
+    background-color: #333;
     border-radius: 5px;
     transition: 0.8s;
   }
@@ -83,17 +87,16 @@
     background-color: #d1c9c9;
   }
 
-
   .helpers {
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   }
 
+
   .helpers a {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
+    padding: 5%;
     text-decoration: none;
     transition: 0.8s;
     color:  #333
@@ -109,24 +112,21 @@
   } 
 
   footer {
-    padding: 20px;
-    text-align: center;
-    background-color:  #333;
-    min-width: 100%;
-
-    position: fixed;
-    bottom: 0;
+      width: 100%;
+      min-height: 55%;
+      background-color: #333;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      color: white;
   }
 
-  footer a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    transition: 0.8s;
+  footer ul li {
+    list-style-type: none;
   }
 
-  footer a:hover {
-    color:#d1c9c9;
-  }
+
   </style>
 </head>
 
@@ -154,8 +154,30 @@
   </main>
 
   <footer>
-    <a href="https://picsartacademy.am/" target="_blank">Academy Web Site</a>
-  </footer>
+    <div>
+        <ul><h3>Contact Us</h3>
+            <li>Azatutyan 24/17</li>
+            <li>Yerevan, Yerevan</li>
+            <li>Phone: (123) 456-7890</li>
+            <li>Email: info@academy.com</li>
+        </ul>
+    </div>
+    <div>
+        <ul><h3>Library Hours</h3>
+            <li>Monday - Friday: 9am - 5pm</li>
+            <li>Saturday: 10am - 4pm</li>
+            <li>Sunday: Closed</li>
+        </ul>
+    </div>
+    <div>
+        <ul><h3>Helpful Links</h3>
+            <li>Academy Website</li>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Feedback Form</li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
 

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #ffffff;
+        }
+
+        header {
+            width: 100%;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction:row-reverse; 
+            position: relative;
+        } 
+
+        #img-logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            justify-content: left;
+        }
+
+        .nav-option {      
+            padding-right: 15px;
+            font-size: 18px;
+            text-align: center;
+            width: 60px;
+            height: 30px;
+            margin: 10px;
+        }
+
+        .nav-option a {
+            font-size: 20px;
+            padding-top: 25px;
+            text-decoration: none;
+            transition: 0.8s;
+            color: white
+            
+        }
+
+        .nav-option a:hover {
+            color: gray
+        }
+
+        @media screen and (max-width: 400px) {
+             .nav {
+                position: relative;
+                flex-direction: column;
+            }
+
+            #img-logo {
+                position: absolute;
+                top: 30%;
+                left: 50%;
+            } 
+        }
+
+        main {
+            overflow: hidden;
+            height: 80%;
+            background: url("https://wallpaperaccess.com/full/6263243.jpg");
+            background-position: 10%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+       
+        #main-info {
+            width: 100%;
+            display: flex; 
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: #333;
+            opacity: 0.8;
+        }
+
+        .book-picture {
+            margin-top: 2%;
+            margin-left: 2%;
+            background: url("https://i.postimg.cc/Sx8WvpsG/tanenbaum.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 30%;
+   
+        }
+
+        .book-info {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+            text-align: left;
+            color: white;
+            width: 20%;
+            margin-right: 2%;
+            margin-left: 1%;
+            margin-top: 2%;
+        }
+      
+
+        .description {
+            line-height: 1.2;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 40%;
+            margin-right: 2%;
+            margin-left: 1%;
+            margin-top: 2%;
+        }
+
+        .controllers {
+            background-color: #333;
+            opacity: 0.8;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .controllers button {
+            height: 50px;
+            width: 25%;
+            border: solid;
+            border-color: #fdfdfd;
+            border-radius: 5px;
+            background-color: #ffffff;
+            margin-top: 2%;
+            margin-left: 1%;
+            color: #333;
+            transition: 0.8s;
+        }
+
+        .controllers button:hover {
+            opacity: 0.7;
+            background-color: gray;
+        }
+
+        .recomended {
+            background-color: #333;
+            opacity: 0.8;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .recomended  .item {
+            background: url("https://i.postimg.cc/Sx8WvpsG/tanenbaum.jpg");
+            background-repeat: no-repeat;
+            background-size:100%; 
+            font-size: 16px;
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            transition: 0.6s;
+        }
+
+        .recomended > .item > .info {
+            opacity: 0;
+            transition: 0.6s;
+
+        } 
+
+        .recomended > .item > .info:hover {
+            color:white;
+            background-color: #333;
+            background-size:contain;
+            background-repeat: no-repeat;
+            border: none;
+            border-radius: 15px;
+            padding: 15%;
+            opacity: 1;
+        }
+
+
+        @media screen and (max-width:780px) {
+            #main-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+            }
+
+
+            .book-info {
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                width: 100%;
+            }
+
+            .book-info .point {
+                margin-right: 10%;
+                width: 20%;
+            }
+
+
+            .book-picture {
+                width: 350px;
+                height: 300px;
+            }
+
+            .description {
+                width: 90%;
+                margin-right: 2%;
+                margin-left: 1%;
+                margin-top: 2%;
+            }
+        }
+
+        footer {
+            width: 100%;
+            height: 20%;
+            background-color: #333;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        footer .footer-info {
+            color: white;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <img id="img-logo"  alt="logo" src="https://i.postimg.cc/g2YRctHV/picsart-academy-logo-resized.png">
+            <div class="nav-option">
+                <a href="/">Home</a>
+            </div>
+            <div class="nav-option">
+                <a href="/login">Login</a>
+            </div>
+            <div class="nav-option">
+                <a href="/catalog">Catalog</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="main-info">
+            <div class="book-picture"></div>
+            <div class="book-info">
+
+                <div class="point">
+                    <h3>Title: </h3>
+                    <p>"Computer Arhcitecture Structure"</p>
+                </div>
+                <div class="point">
+                    <h3>Author: </h3>
+                    <p>Tannenbaum</p>
+                </div>
+                <div class="point">
+                    <h3>Genre: </h3>
+                    <p>Computer Science</p>
+                </div>
+            </div>
+
+            <div class="description">
+                <h3>Description: </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, vero? Natus reiciendis omnis nemo nam aperiam assumenda ratione saepe quia in maxime asperiores voluptatibus consequatur est, iure fugiat qui vitae obcaecati eaque eum! Dolores cumque amet illo, similique quaerat nobis recusandae incidunt beatae possimus mollitia minima nisi fugiat. Possimus, molestias!</p>
+            </div>
+        </div>
+
+
+        <div class="controllers">
+            <button>Borrow</button>
+            <button>Reserve</button>
+        </div>
+
+        <div class="recomended">
+                <div class="item">
+                    <div class="info">
+                        <h3>"Structured Computer Organization"</h3>
+                        <p>author: Tannenbaum</p>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="info">
+                        <h3>"The C programing Language"</h3>
+                        <p>author: Kernighan</p>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="info">
+                        <h3>"The Linux Command Line"</h3>
+                        <p>author: Whilliam Shotts</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <ul><h3>Contact Us</h3>
+                <li>Azatutyan 24/17</li>
+                <li>Yerevan, Yerevan</li>
+                <li>Phone: (123) 456-7890</li>
+                <li>Email: info@academy.com</li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <ul><h3>Library Hours</h3>
+                <li>Monday - Friday: 9am - 5pm</li>
+                <li>Saturday: 10am - 4pm</li>
+                <li>Sunday: Closed</li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <ul><h3>Helpful Links</h3>
+                <li>Academy Website</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Feedback Form</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
