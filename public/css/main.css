@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+}
+
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row-reverse; 
+    padding: 5px;
+    position: relative;
+} 
+
+#img-logo {
+    position: absolute;
+    left: 0;
+}
+
+.nav-option {      
+    padding-right: 15px;
+    font-size: 18px;
+    text-align: center;
+    width: 60px;
+    height: 30px;
+    margin: 10px;
+}
+
+.nav-option a {
+    font-size: 20px;
+    padding-top: 25px;
+    text-decoration: none;
+    transition: 0.8s;
+    color: white
+    
+}
+
+.nav-option a:hover {
+    color:gray
+}
+
+@media screen and (max-width: 400px) {
+     .nav {
+        position: relative;
+        flex-direction: column;
+    }
+
+    #img-logo {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+    }
+    
+    main {
+        padding-top: 45%;
+    }
+}
+
+
+main {
+    background: url("https://i.postimg.cc/cLwSQCQ2/background-photo.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-width: 100%;
+    max-width: 100%;
+    min-height:70%;
+}
+
+
+main .welcome{
+    padding-top: 5%;
+    text-align: center;
+}
+
+#greeting {
+    font-size: 50px;
+}
+
+#foo {
+    font-size: 30px;
+}
+
+
+.books-preview {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.books-preview  .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    margin:20px;
+    border:none;
+    border-radius: 8%;
+    background-color: #333;
+}
+
+.books-preview .item .picture {
+    width: 40%;
+    height: 150px;
+    margin: 2%;
+    background: url("https://i.postimg.cc/Sx8WvpsG/tanenbaum.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.books-preview .item .info {
+    color:white;
+    text-align: center; 
+     width: 50%;
+}
+
+.view-option {
+    display: flex;
+    justify-content: center;
+}
+
+#view-all {
+    height: 40px;
+    width: 30%;
+    background-color: #333;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    margin-bottom: 3%;
+    transition: 0.8s;
+}
+
+#view-all:hover {
+    color:gray;
+    opacity: 0.7;
+}
+
+footer {
+    width: 100%;
+    min-height: 55%;
+    background-color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+}
+
+footer .footer-info {
+    color: white;
+}

@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    overflow: hidden;
+}
+
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row-reverse; 
+    position: relative;
+} 
+
+#img-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: left;
+}
+
+.nav-option {      
+    padding-right: 15px;
+    font-size: 18px;
+    text-align: center;
+    width: 60px;
+    height: 30px;
+    margin: 10px;
+}
+
+.nav-option a {
+    font-size: 20px;
+    padding-top: 25px;
+    text-decoration: none;
+    transition: 0.8s;
+    color: white
+    
+}
+
+.nav-option a:hover {
+    color: gray
+}
+
+@media screen and (max-width: 400px) {
+     .nav {
+        position: relative;
+        flex-direction: column;
+    }
+
+    #img-logo {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+    } 
+}
+
+main {
+    overflow: hidden;
+    height: 80%;
+    background: url("https://wallpaperaccess.com/full/6263243.jpg");
+    background-position: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+#main-info {
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.book-picture {
+    margin-top: 2%;
+    margin-left: 2%;
+    background: url("https://i.postimg.cc/Sx8WvpsG/tanenbaum.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30%;
+
+}
+
+.book-info {
+    background-color: #333;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    text-align: center;
+    color: white;
+    width: 20%;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+
+
+.description {
+    background-color: #333;
+    opacity: 0.8;
+    line-height: 1.2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 40%;
+    margin-right: 2%;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+
+.description p {
+    margin-left: 2%;
+}
+
+.controllers {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.controllers button {
+    height: 50px;
+    width: 25%;
+    border: solid;
+    border-color: #fdfdfd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-top: 2%;
+    margin-left: 1%;
+    transition: 0.8s;
+}
+
+.controllers button:hover {
+    opacity: 0.7;
+    background-color: gray;
+}
+
+.books-preview {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.books-preview  .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    margin:20px;
+    border:none;
+    border-radius: 8%;
+    background-color: #333;
+}
+
+.books-preview .item .picture {
+    width: 40%;
+    height: 150px;
+    margin: 2%;
+    background: url("https://i.postimg.cc/Sx8WvpsG/tanenbaum.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.books-preview .item .info {
+    color:white;
+    text-align: center; 
+    width: 50%;
+}
+
+
+@media screen and (max-width:780px) {
+    #main-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+
+    .book-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .book-info .point {
+        margin-right: 5%;
+        width: 20%;
+    }
+
+
+    .book-picture {
+        width: 350px;
+        height: 300px;
+    }
+
+    .description {
+        width: 90%;
+        margin-right: 2%;
+        margin-left: 1%;
+        margin-top: 2%;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 20%;
+    background-color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+
+footer .footer-info {
+    color: white;
+    overflow: hidden;
+}

@@ -1,0 +1,650 @@
+[
+  {
+    "title": "Java The Complete Reference, Eleventh Edition",
+    "authors": ["Herbert Schildt"],
+    "isbn": "978126044232",
+    "published_year": 2019,
+    "category": [
+      "Programming Language",
+      "Java",
+      "OOAD",
+      "Object Oriented Programming"
+    ],
+    "availability": true,
+    "location": {
+      "shelf": "A6",
+      "row": 2
+    },
+    "additional_info": {
+      "publisher": "Oracle",
+      "language": "English",
+      "page_count": 1208
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "Essential Math for Data Science",
+    "authors": ["Thomas Nield"],
+    "isbn": "9871098102937",
+    "published_year": 2022,
+    "category": ["Math", "Data Science", "Linear Algebra", "Statistics"],
+    "availability": true,
+    "location": {
+      "shelf": "B1",
+      "row": 0
+    },
+    "additional_info": {
+      "publisher": "O'REILLY",
+      "language": "English",
+      "page_count": 323
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "C++ Software Design",
+    "authors": ["Klaus Iglberger"],
+    "isbn": "9871098113162",
+    "published_year": 2022,
+    "category": ["Design Principles", "Patterns", "C++", "Software Design"],
+    "availability": true,
+    "location": {
+      "shelf": "B1",
+      "row": 0
+    },
+    "additional_info": {
+      "publisher": "O'REILLY",
+      "language": "English",
+      "page_count": 409
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "Software Architecture: The Hard Parts",
+    "author": [
+      "Neal Ford",
+      "Marc Richards",
+      "Pramod Sadalage",
+      "Zhamak Deghani"
+    ],
+    "isbn": "9871492086895",
+    "published_year": 2021,
+    "category": [
+      "Software Architecture",
+      "Data Ownership",
+      "Analyses for Distributed Architectures"
+    ],
+    "availability": true,
+    "location": {
+      "shelf": "B1",
+      "row": 0
+    },
+    "additional_info": {
+      "publisher": "O'REILLY",
+      "language": "English",
+      "page_count": 425
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "Modern C++ Design",
+    "author": ["Andrei Alexandrescu", "Scott Meyers", "John Vlissides"],
+    "isbn": "0201704315",
+    "published_year": 2001,
+    "category": [
+      "C++",
+      "Design Patterns",
+      "Functors",
+      "Memory Management",
+      "RAII"
+    ],
+    "availability": true,
+    "location": {
+      "shelf": "B1",
+      "row": 0
+    },
+    "additional_info": {
+      "publisher": "Addison-Wesley",
+      "language": "English",
+      "page_count": 313
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "Decode to Encode",
+    "author": ["Avinash Ramachandran"],
+    "isbn": "9780998045016",
+    "published_year": 2018,
+    "category": ["Video Compression", "GOPs", "Video Codec Architecture"],
+    "availability": true,
+    "location": {
+      "shelf": "B1",
+      "row": 0
+    },
+    "additional_info": {
+      "publisher": "Made in USA",
+      "language": "English",
+      "page_count": 181
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "System Design Interview",
+    "author": ["Alex Xu"],
+    "isbn": "9798664653403",
+    "published_year": 2020,
+    "category": [
+      "Database",
+      "Design YouTube",
+      "Notification System",
+      "Web Server",
+      "Design Google Drive"
+    ],
+    "availability": true,
+    "location": {
+      "shelf": "B1",
+      "row": 0
+    },  
+    "additional_info": {
+      "publisher": "Byte Code LLC",
+      "language": "English",
+      "page_count": 313
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "A Digital Signal Preocessing Primer",
+    "author": ["Ken Steiglitz"],
+    "isbn": "9780486845838",
+    "published_year": 2020,
+    "category": [
+      "Digital Audio",
+      "Computer Music",
+      "Discrete Fourier Transform"
+    ],
+    "availability": true,
+    "location": {
+      "shelf": "B1",
+      "row": 0
+    },
+    "additional_info": {
+      "publisher": "Dover Publications",
+      "language": "English",
+      "page_count": 309
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "The Fabric of Reality",
+    "author": ["Daivd Deutsch"],
+    "isbn": "0713990619",
+    "published_year": 1997,
+    "category": ["Computer Science", "Quantum Computers", "Virtual Reality"],
+    "availability": true,
+    "location": {
+      "shelf": "B1",
+      "row": 0
+    },
+    "additional_info": {
+      "publisher": "Penguin Books",
+      "language": "English",
+      "page_count": 371
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "Fundamentals of Software Architecture",
+    "author": ["Marc Richards", "Neal Ford"],
+    "isbn": "9781492043454",
+    "published_year": 2001,
+    "category": [
+      "Software Architectur",
+      "Event-Driven Architecture",
+      "Architecture Styles",
+      "Microservices",
+      "Orchestration-Driven"
+    ],
+    "availability": true,
+    "location": {
+      "shelf": "B2",
+      "row": 0
+    },
+    "additional_info": {
+      "publisher": "O'REILLY",
+      "language": "English",
+      "page_count": 383
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "Raspberry Pi",
+    "author": ["Simon Monk"],
+    "isbn": "9785990846265",
+    "published_year": 2014,
+    "category": ["Raspberry Pi", "GPIO connector", "System Programming"],
+    "availability": true,
+    "location": {
+      "shelf": "B2",
+      "row": 0
+    },
+    "additional_info": {
+      "publisher": "O'REILLY",
+      "language": "Russian",
+      "page_count": 410
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "The Innovators",
+    "author": ["Walter Isaacson"],
+    "isbn": "9781476708690",
+    "published_year": 2014,
+    "category": [
+      "Ada Lovelace",
+      "The Computer",
+      "Transistor",
+      "Microchip",
+      "Programming",
+      "Hackers"
+    ],
+    "availability": true,
+    "location": {
+      "shelf": "B2",
+      "row": 0
+    },
+    "additional_info": {
+      "publisher": "Simon & Schuster Paperbacks",
+      "language": "English",
+      "page_count": 410
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "Raspberry Pi 4",
+    "author": ["Gareth Halfacree"],
+    "isbn": "9785970609026",
+    "published_year": 2021,
+    "category": [
+      "System Programming",
+      "Raspberry Pi",
+      "Python",
+      "GPIO connector"
+    ],
+    "availability": true,
+    "location": {
+      "shelf": "B2",
+      "row": 0
+    },
+    "additional_info": {
+      "publisher": "Simon & Schuster Paperbacks",
+      "language": "English",
+      "page_count": 410
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "The Game Console 2.0",
+    "author": ["Evan Amos"],
+    "isbn": "9781718500600",
+    "published_year": 2021,
+    "category": ["Microsoft XBOX", "Sony Playstation", "Nintendo"],
+    "availability": true,
+    "location": {
+      "shelf": "B2",
+      "row": 0
+    },
+    "additional_info": {
+      "publisher": "William Pollock",
+      "language": "English",
+      "page_count": 312
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "Multithreaded JavaScript",
+    "author": ["Thomas Hunter", "Bryan English"],
+    "isbn": "9781098104436",
+    "published_year": 2021,
+    "category": [
+      "Threads",
+      "Concurrency",
+      "Parallelism",
+      "Browsers",
+      "WebAssembly",
+      "Memory Management",
+      "JavaScript",
+      "Node.js"
+    ],
+    "availability": true,
+    "location": {
+      "shelf": "A2",
+      "row": 0
+    },
+    "additional_info": {
+      "publisher": "O'REILLY",
+      "language": "English",
+      "page_count": 187
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "Distributed Systems with Node.js",
+    "author": ["Thomas Hunter"],
+    "isbn": "9781492077299",
+    "published_year": 2020,
+    "category": [
+      "Protocols",
+      "JavaScript",
+      "Node.js",
+      "Deployments",
+      "Kubernetes",
+      "Security",
+      "Model View Controller"
+    ],
+    "availability": true,
+    "location": {
+      "shelf": "A2",
+      "row": 0
+    },
+    "additional_info": {
+      "publisher": "O'REILLY",
+      "language": "English",
+      "page_count": 355
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "iOS Programming",
+    "author": ["Christian Keur", "Aaron Hillegass"],
+    "isbn": "9780134682334",
+    "published_year": 2016,
+    "category": [
+      "iOS Applications",
+      "Swift",
+      "Web Services",
+      "Model View Controller"
+    ],
+    "availability": true,
+    "location": {
+      "shelf": "A2",
+      "row": 0
+    },
+    "additional_info": {
+      "publisher": "Big Nerd Ranch",
+      "language": "English",
+      "page_count": 449
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "The Startup Owner's Manual",
+    "author": ["Steve Blank", "Bob Dorf"],
+    "isbn": "9780984999309",
+    "published_year": 2016,
+    "category": ["Customer Discovery", "Customer Validation", "Startup"],
+    "availability": true,
+    "location": {
+      "shelf": "A2",
+      "row": 0
+    },
+    "additional_info": {
+      "publisher": "K&S Ranch",
+      "language": "English",
+      "page_count": 557
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "How not to be wrong",
+    "authors": ["Jordan Ellenberg"],
+    "isbn": "978-1-59420-522-4",
+    "published_year": 2014,
+    "category": [
+      "Non-fiction",
+      "Mathematics",
+      "Probability",
+      "Statistics"
+    ],
+    "availability": true,
+    "location": {
+      "shelf": "G",
+      "row": 2
+    },
+    "additional_info": {
+      "publisher": "The penguin press",
+      "language": "English",
+      "page_count": 468
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "Dune",
+    "authors": ["Frank Herbert"],
+    "isbn": "9780441172719",
+    "published_year": 2010,
+    "category": [
+      "Fiction",
+      "Political intrigue",
+      "Ecology"
+    ],
+    "availability": true,
+    "location": {
+        "shelf": "G",
+        "row": 2
+    },
+    "additional_info": {
+      "publisher": "Ace",
+      "language": "English",
+      "page_count": 884
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "God Emperor of Dune",
+    "authors": ["Frank Herbert"],
+    "isbn": "9780593098257",
+    "published_year": 2019,
+    "category": [
+      "Fiction",
+      "Philosophy"
+    ],
+    "availability": true,
+    "location": {
+        "shelf": "G",
+        "row": 2
+    },
+    "additional_info": {
+      "publisher": "Ace",
+      "language": "English",
+      "page_count": 587
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "Heretics of Dune",
+    "authors": ["Frank Herbert"],
+    "isbn": "9780593098264",
+    "published_year": 2019,
+    "category": [
+      "Science Fiction",
+      "Speculative Fiction",
+      "Religion and Philosophy",
+      "Political Intrigue and Power Dynamics"
+    ],
+    "availability": true,
+    "location": {
+        "shelf": "G",
+        "row": 2
+    },
+    "additional_info": {
+      "publisher": "Ace",
+      "language": "English",
+      "page_count": 669
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "Children of Dune",
+    "authors": ["Frank Herbert"],
+    "isbn": "9780593098240",
+    "published_year": 2019,
+    "category": [
+      "Science Fiction",
+      "Speculative Fiction",
+      "Ecology",
+      "Psychology"
+    ],
+    "availability": true,
+    "location": {
+        "shelf": "G",
+        "row": 2
+    },
+    "additional_info": {
+      "publisher": "Ace",
+      "language": "English",
+      "page_count": 609
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "Numbers Don't Lie",
+    "authors": ["Vaclav Smil"],
+    "isbn": "978014313224",
+    "published_year": 2021,
+    "category": [
+      "Data Analysis and Interpretation",
+      "Technology and Innovation",
+      "Energy and Environment",
+      "Socioeconomic Trends and Policy Implications"
+    ],
+    "availability": true,
+    "location": {
+        "shelf": "G",
+        "row": 2
+    },
+    "additional_info": {
+      "publisher": "Penguin books",
+      "language": "English",
+      "page_count": 350
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "1984",
+    "authors": ["George Orwell"],
+    "isbn": "978-5-04-120578-2",
+    "published_year": 2022,
+    "category": [
+      "Fiction",
+      "Political Allegory and Social Critique",
+      "Psychological and Societal Manipulation"
+    ],
+    "availability": true,
+    "location": {
+        "shelf": "G",
+        "row": 2
+    },
+    "additional_info": {
+      "publisher": "Eksmo",
+      "language": "Russian",
+      "page_count": 303
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "A space odyssey",
+    "authors": ["Artur C. Clarke"],
+    "isbn": "978-1-85723-664-4",
+    "published_year": 1998,
+    "category": [
+      "Science Fiction / Space Exploration",
+      "Artificial Intelligence and Technology",
+      "Existential and Philosophical Themes",
+      "Futuristic Adventure and Discovery"
+    ],
+    "availability": true,
+    "location": {
+        "shelf": "G",
+        "row": 2
+    },
+    "additional_info": {
+      "publisher": "Orbit",
+      "language": "English",
+      "page_count": 251
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "Chapterhouse Dune",
+    "authors": ["Frank Herbert"],
+    "isbn": "978-0-441-00541-7",
+    "published_year": 2022,
+    "category": [
+      "Science Fiction / Speculative Fiction",
+      "Political Intrigue and Power Struggles",
+      "Philosophical Exploration and Societal Evolution",
+      "Ecology"
+    ],
+    "availability": true,
+    "location": {
+        "shelf": "G",
+        "row": 2
+    },
+    "additional_info": {
+      "publisher": "Ace",
+      "language": "English",
+      "page_count": 609
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  },
+  {
+    "title": "Dune Messiah",
+    "authors": ["Frank Herbert"],
+    "isbn": "9780593098233",
+    "published_year": 2019,
+    "category": [
+      "Science Fiction / Speculative Fiction",
+      "Religious and Societal Transformations",
+      "Psychological Dilemmas and Prophecy",
+      "Political Intrigue and Power Dynamics"
+    ],
+    "availability": true,
+    "location": {
+        "shelf": "G",
+        "row": 2
+    },
+    "additional_info": {
+      "publisher": "Ace",
+      "language": "English",
+      "page_count": 336
+    },
+    "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
+    "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
+  }
+]
