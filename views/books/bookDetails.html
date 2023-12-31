@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/public/js/bookDetails.js"></script>
+    <link rel="stylesheet" type="text/css" href="/public/css/bookDetails.css">
     <title>details</title>
-    <link rel="stylesheet" type="text/css" href="./css/bookDetails.css">
 </head>
 <body>
     <header>
         <div class="nav">
-            <img id="img-logo"  alt="logo" src="https://i.postimg.cc/g2YRctHV/picsart-academy-logo-resized.png">
+            <img id="img-logo"  src="https://i.postimg.cc/g2YRctHV/picsart-academy-logo-resized.png">
             <div class="nav-option">
-                <a href="/">Home</a>
+                <a href="/auth/login" id="login-logout">Login</a>
             </div>
             <div class="nav-option">
-                <a href="/login">Login</a>
+                <a href="/home/catalog">Catalog</a>
             </div>
             <div class="nav-option">
-                <a href="/catalog">Catalog</a>
+                <a href="/home">Home</a>
             </div>
-        </nav>
+        </div>
     </header>
     
     <main>
@@ -27,17 +28,17 @@
             <div class="book-picture"></div>
             <div class="book-info">
 
-                <div class="point">
+                <div class="point" id="title">
                     <h3>Title: </h3>
-                    <p>"Computer Arhcitecture Structure"</p>
+                    <p></p>
                 </div>
-                <div class="point">
-                    <h3>Author: </h3>
-                    <p>Tannenbaum</p>
+                <div class="point" id="author">
+                    <h3>Author(s): </h3>
+                    <p></p>
                 </div>
-                <div class="point">
+                <div class="point" id="genre">
                     <h3>Genre: </h3>
-                    <p>Computer Science</p>
+                    <p></p>
                 </div>
             </div>
 
@@ -53,31 +54,7 @@
             <button>Reserve</button>
         </div>
 
-        <div class="books-preview">
-            <div class="item">
-                <div class="picture"></div>
-                <div class="info">
-                    <h3>"The C programing Language"</h3>
-                    <p>author: Kernighan</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="picture"></div>
-                <div class="info">
-                    <h3>"The C programing Language"</h3>
-                    <p>author: Kernighan</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="picture"></div>
-                <div class="info">
-                    <h3>"The C programing Language"</h3>
-                    <p>author: Kernighan</p>
-                </div>
-            </div>
-        </div>
+        <div class="books-preview"></div>
     </main>
 
     <footer>
@@ -105,5 +82,6 @@
             </ul>
         </div>
     </footer>
+    <script src="/public/js/userAuthControl.js"></script>
 </body>
 </html>

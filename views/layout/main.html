@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <script src="/public/js/main.js" type="module"></script>
 </head>
 <body>
     <header>
         <div class="nav">
             <img id="img-logo"  src="https://i.postimg.cc/g2YRctHV/picsart-academy-logo-resized.png">
             <div class="nav-option">
-                <a href="/">Home</a>
+                <a href="/auth/login" id="login-logout">Login</a>
             </div>
             <div class="nav-option">
-                <a href="/login">Login</a>
+                <a href="/home/catalog">Catalog</a>
             </div>
             <div class="nav-option">
-                <a href="/catalog">Catalog</a>
+                <a href="/home">Home</a>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
@@ -30,55 +31,7 @@
         </div>
 
 
-        <div class="books-preview">
-            <div class="item">
-                <div class="picture"></div>
-                <div class="info">
-                    <h3>"The C programing Language"</h3>
-                    <p>author: Kernighan</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="picture"></div>
-                <div class="info">
-                    <h3>"The C programing Language"</h3>
-                    <p>author: Kernighan</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="picture"></div>
-                <div class="info">
-                    <h3>"The C programing Language"</h3>
-                    <p>author: Kernighan</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="picture"></div>
-                <div class="info">
-                    <h3>"The C programing Language"</h3>
-                    <p>author: Kernighan</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="picture"></div>
-                <div class="info">
-                    <h3>"The C programing Language"</h3>
-                    <p>author: Kernighan</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="picture"></div>
-                <div class="info">
-                    <h3>"The C programing Language"</h3>
-                    <p>author: Kernighan</p>
-                </div>
-            </div>
-        </div>
+        <div class="books-preview"></div>
 
         <div class="view-option">
             <button id="view-all">View all</button>
@@ -111,6 +64,6 @@
             </ul>
         </div>
     </footer>
-    <!-- <script src="./script.js"></script> -->
+    <script src="/public/js/userAuthControl.js" type="module"></script>
 </body>
 </html>

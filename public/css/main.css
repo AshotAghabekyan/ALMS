@@ -25,7 +25,7 @@ header {
 
 #img-logo {
     position: absolute;
-    left: 0;
+    left: 20px;
 }
 
 .nav-option {      
@@ -109,6 +109,7 @@ main .welcome{
     margin:20px;
     border:none;
     border-radius: 8%;
+    transition: 0.6s;
     background-color: #333;
 }
 
@@ -124,7 +125,18 @@ main .welcome{
 .books-preview .item .info {
     color:white;
     text-align: center; 
-     width: 50%;
+    width: 50%;
+}
+
+.books-preview .item .info a {
+    color: white;
+    
+}
+
+.books-preview .item:hover {
+    color:gray;
+    opacity: 0.9;
+    box-shadow: 5px 5px 5px 2px #333;
 }
 
 .view-option {

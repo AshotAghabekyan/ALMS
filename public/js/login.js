@@ -1,20 +1,37 @@
 "use strict"
 
 let loginForm = document.forms.login;
-loginForm.onsubmit = async function(event) {
-    let emailRegEx = /^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/
-
+loginForm.onsubmit = function(event) {
+    event.preventDefault();
     let userInfo = new FormData(loginForm); 
-    if (userInfo.get('password').length < 8 || userInfo.get('password').length > 20) {
-        alert("Invalid input");
-        event.preventDefault();
-        return;
-    }
 
-    if (!emailRegEx.test(userInfo.get('email'))) {
-        alert("Invalid email input");
-        event.preventDefault();
-        return;
-    }
-    window.location.reload();   
+    fetch("/auth/login", {
+        method : 'POST',
+        headers: {
+            'Content-Type': "application/json"
+        },
+        body: JSON.stringify({
+            email: userInfo.get("email"),
+            password: userInfo.get("password"),
+        }),
+        mode: 'cors',
+        cache: 'no-cache',
+        credentials: 'same-origin'
+    })
+    .then(async (response) => {
+        let parsedResponse = await response.json();
+        if (response.status == 200) {
+            return parsedResponse;
+        } else {
+            throw new Error(parsedResponse.message);
+        }
+    })
+    .then(user => {
+        window.location.href = '/';
+        alert(`Welcome ${user.fullname}`);
+    })
+    .catch((err) => {
+        alert(err.message);
+        window.location.href = "/auth/login";
+    });
 }

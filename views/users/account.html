@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>account</title>
+    <link rel="stylesheet" href="/public/css/account.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <img id="img-logo"  src="https://i.postimg.cc/g2YRctHV/picsart-academy-logo-resized.png">
+            <div class="nav-option">
+                <a href="/auth/logout" id="login-logout">LogOut</a>
+            </div>
+            <div class="nav-option">
+                <a href="/home/catalog">Catalog</a>
+            </div>
+            <div class="nav-option">
+                <a href="/home">Home</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="user-options">
+            <div id="user-info">
+                <ul><h3>My Account</h3>
+                    <div id="firstname">
+                        <li>firstname: </li> <p></p>
+                    </div>
+                    
+                    <div id="lastname">
+                        <li>lastname: </li> <p></p>
+                    </div>
+                    
+                    <div id="email">
+                        <li>email: </li> <p></p>
+                    </div> 
+                </ul>
+            </div>
+            <div id="account-managment">
+                <h3>Options</h3>
+                <button id="changePassword">change password</button>
+                <button id="changeFullname">change fullname</button>
+                <button id="reservedBooks">reserved books list</button>
+                <button id="deleteAccount">delete account</button>
+            </div>
+        </div>
+
+        <div id="fullnameChangePanel">
+            <div><h3>Enter new Username</h3></div>
+            <div>
+                <input type="text" id="newUsername">
+            </div>
+            <div>
+                <button class="confirm" id="confirmFullnameChange">Confirm</button>
+                <button class="cancel" id="cancelFullnameChange">Cancel</button>
+            </div>
+        </div>
+        
+        <div id="passwordChangePanel">
+            <div>
+                <h3>Enter new Password</h3>
+                <input type="text" id="newPassword">
+            </div>
+            <div>
+                <button class="confirm" id="confirmPasswordChange">Confirm</button>
+                <button class="cancel" id="cancelPasswordChange">Cancel</button>
+            </div>
+        </div>
+
+        <div id="deleteAccountPanel">
+            <div class="checkingBeforeDeletion">
+                <h3>Enter the password to confirm account deletion</h3>
+                <input type="password" id="passwordForDeletion">
+            </div>
+            <div>
+                <div>
+                    <button class="confirm" id="confirmDeletion">Confirm</button>
+                    <button class="cancel" id="cancelDeletion">Cancel</button>
+                </div>
+            </div>
+        </div>
+       <!-- <div class="img"></div> -->
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <ul><h3>Contact Us</h3>
+                <li>Azatutyan 24/17</li>
+                <li>Yerevan, Yerevan</li>
+                <li>Phone: (123) 456-7890</li>
+                <li>Email: info@academy.com</li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <ul><h3>Library Hours</h3>
+                <li>Monday - Friday: 9am - 5pm</li>
+                <li>Saturday: 10am - 4pm</li>
+                <li>Sunday: Closed</li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <ul><h3>Helpful Links</h3>
+                <li>Academy Website</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Feedback Form</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/public/js/account.js"></script>
+</body>
+</html>

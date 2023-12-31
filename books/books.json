@@ -1506,5 +1506,145 @@
     },
     "cover_url": "https://example.com/thumbnails/java-complete-reference.jpg",
     "online_version_url": "https://example.com/ebooks/java-complete-reference.pdf"
-  }
+  },
+  {
+    "title": "Mass Effect: Revelation",
+    "authors": [
+    "Дрю Карпишин"
+    ],
+    "isbn": "978-5-395-00446-8",
+    "published_year": 2009,
+    "category": [
+        "Fiction",
+        "Mystery",
+        "Thriller",
+        "Science", 
+        "Fantasy",
+        "Non-Fiction"
+    ],
+    "availability": true,
+    "location": {
+    "shelf": "F",
+    "row": 2
+    },
+    "additional_info": {
+    "publisher": "Азбука-классика",
+    "language": "Русский",
+    "page_count": 320
+    },
+    "cover_url": "https://example.com/thumbnails/mass-effect-revelation.jpg",
+    "online_version_url": "https://example.com/ebooks/mass-effect-revelation.pdf"
+},
+
+{
+    "title": "The Story of Psychology",
+    "authors": [
+        "Morton Hunt"
+    ],
+    "isbn": "0385247621",
+    "published_year": 1993,
+    "category": [
+        "Psychology",
+        "History",
+        "Science"
+    ],
+    "availability": true,
+    "location": {
+    "shelf": "F",
+    "row": 2
+    },
+
+    "aditional_info" : {
+        "publisher": "Doubleday",
+        "language": "English",
+        "page_count": 762
+    },
+    "cover_url": "https://example.com/thumbnails/the-story-of-psychology.jpg",
+    "online_version_url": "https://example.com/ebooks/the-story-of-psychology.pdf"
+},
+
+
+{
+    "title": "The Little Prince",
+    "authors": [
+        "Antoine de Saint-Exupéry"
+    ],
+    "isbn": "978-0156012195",
+    "published_year": 2000,
+    "category": [
+        "Fiction",
+        "Fantasy",
+        "Allegory"
+    ],
+    "availability": true,
+    "location": {
+    "shelf": "F",
+    "row": 1
+    },
+    "aditional_info": {
+        "publisher": "Clarion Books",
+        "language": "English",
+        "page_count": 96
+    },
+    "cover_url": "https://example.com/thumbnails/the-little-prince.jpg",
+    "online_version_url": "https://example.com/ebooks/the-little-prince.pdf"
+},
+
+{
+    "title": "1984",
+    "authors": [
+        "George Orwell"
+    ],
+    "isbn": "978-0451524935",
+    "published_year": 1961,
+    "category" : [
+        "Fiction", "Social Commentary",
+        "Classic Literature"
+    ],
+    "availability": true,
+    "location": {
+    "shelf": "F",
+    "row": 1
+    },
+    "aditional_info": {
+        "publisher": "Signet Classic",
+        "language": "English",
+        "page_count": 328
+    },
+    "cover_url": "https://example.com/thumbnails/1984.jpg",
+    "online_version_url": "https://example.com/ebooks/1984.pdf"
+},
+
+
+{
+    "title": "A Brief History of Time",
+    "authors": [
+        "Stephen Hawking",
+        "Leonard Mlodinow"
+    ],
+    "isbn": "978-0553380163",
+    "published_year": 1998,
+    "category": [
+        "Non-Fiction",
+        "Physics",
+        "Cosmology",
+        "Popular Science",
+        "Astrophysics",
+        "Philosophy of Science",
+        "Biography"
+    ],
+    "availability": true,
+    "location": {
+    "shelf": "F",
+    "row": 2
+    },
+    "aditional_info" : {
+        "publisher": "Random House Publishing Group",
+        "language": "English",
+        "page_count": 212
+    },
+    "cover_url": "https://example.com/thumbnails/a_brief_history_of_time.jpg",
+    "online_version_url": "https://example.com/ebooks/a_brief_history_of_time.pdf"
+
+}
 ]

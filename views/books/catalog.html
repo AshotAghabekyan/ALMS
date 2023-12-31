@@ -4,101 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog</title>
-    <link rel="stylesheet" type="text/css" href="./css/catalog.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/catalog.css">
 </head>
 <body>
     <header>
         <div class="nav">
             <img id="img-logo"  src="https://i.postimg.cc/g2YRctHV/picsart-academy-logo-resized.png">
             <div class="nav-option">
-                <a href="/">Home</a>
+                <a href="/auth/login" id="login-logout">Login</a>
             </div>
             <div class="nav-option">
-                <a href="/login">Login</a>
+                <a href="/home/catalog">Catalog</a>
             </div>
             <div class="nav-option">
-                <a href="/catalog">Catalog</a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="aside">
-            <div id="greeting">
-                <h2>Our Library</h2>
-            </div>
-            <div class="filter">
-                <div class="search">
-                    <input type="text" placeholder="search books">
-                </div>
-                
-            <div class="filter">
-                <ul><h3>Filter Options</h3>
-                    <li><a href="#">All books</a></li>
-                    <li><a href="#">Fiction</a></li>
-                    <li><a href="#">Non-Fiction</a></li>
-                    <li><a href="#">Biography</a></li>
-                    <li><a href="#">History</a></li>
-                </ul>
-            </div>
-                <div class="filter">
-                    <button>Reset Filters</button>
-                </div>
+                <a href="/home">Home</a>
             </div>
         </div>
-        <div class="books-preview">
-            <div class="item">
-                <div class="picture"></div>
-                <div class="info">
-                    <h3>"The C programing Language"</h3>
-                    <p>author: Kernighan</p>
-                </div>
-            </div>
+    </header>
 
-            <div class="item">
-                <div class="picture"></div>
-                <div class="info">
-                    <h3>"The C programing Language"</h3>
-                    <p>author: Kernighan</p>
-                    
-                </div>
+    <div class="aside" id="aside-panel">
+        <div id="greeting">
+            <h2>Our Library</h2>
+        </div>
+        <div class="filter">
+            <div class="search">
+                <input type="text" placeholder="search books">
             </div>
-
-            <div class="item">
-                <div class="picture"></div>
-                <div class="info">
-                    <h3>"The C programing Language"</h3>
-                    <p>author: Kernighan</p>
-                </div>
+            
+        <div class="filter">
+            <ul><h3>Filter Options</h3>
+                <li><a href="javascript:void(0)" class="closebtn">&times;</a></li>
+                <li><a href="/home/catalog">All books</a></li>
+                <li><a href="/home/catalog/Fiction">Fiction</a></li>
+                <li><a href="/home/catalog/Non-Fiction">Non-Fiction</a></li>
+                <li><a href="/home/catalog/Biography">Biography</a></li>
+                <li><a href="/home/catalog/History">History</a></li>
+            </ul>
+        </div>
+            <div class="filter">
+                <button id="reset-filter">Reset Filters</button>
             </div>
-
-            <div class="item">
-                <div class="picture"></div>
-                <div class="info">
-                    <h3>"The C programing Language"</h3>
-                    <p>author: Kernighan</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="picture"></div>
-                <div class="info">
-                    <h3>"The C programing Language"</h3>
-                    <p>author: Kernighan</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="picture"></div>
-                <div class="info">
-                    <h3>"The C programing Language"</h3>
-                    <p>author: Kernighan</p>
-                </div>
-            </div>
-            <div>
-                <button id="view-all">View all</button>
-            </div>
+        </div>
+    </div>
+    
+    <main>
+        <button class="openbtn">filter & search</button>
+        <div class="books-preview"></div>
+        <div class="view-option">
+            <button id="view-all">View all</button>
         </div>
     </main>
+
     <footer>
         <div class="footer-info">
             <ul><h3>Contact Us</h3>
@@ -124,5 +80,7 @@
             </ul>
         </div>
     </footer>
+    <script src="/public/js/catalog.js" type="module"></script>
+    <script src="/public/js/userAuthControl.js" type="module"></script>
 </body>
 </html>
