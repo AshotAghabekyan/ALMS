@@ -10,7 +10,7 @@ body {
 
     header {
       width: 100%;
-      background-color: #333;
+      background-color: #f1c4c4;
       height: auto;
       overflow: hidden;
       display: flex;
@@ -109,14 +109,19 @@ body {
 
 
   footer {
-      width: 100%;
-      min-height: 55%;
-      background-color: #333;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center;
-      color: white;
+    width: 100%;
+    min-height: 20vh;
+    background-color: #f1c4c4;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #333
+  }
+
+  footer a {
+    color: #333;
   }
 
   footer ul li {

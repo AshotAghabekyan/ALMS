@@ -56,6 +56,10 @@ export async function headerNavBar() {
         window.location.href = "/home/catalog";
     })
 
+    let login = document.getElementById("login");
+    login.addEventListener("click", function() {
+        window.location.href = "/auth/login";
+    })
 
     if (! await isUserAuthorized()) {
         return;

@@ -50,7 +50,7 @@ header {
 #account {
     width: 50px;
     height: 50px;
-    background: url("https://static.thenounproject.com/png/3795046-200.png");
+    background: url("/public/images/account_icon.png");
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -68,7 +68,7 @@ header {
 #home {
     width: 50px;
     height: 50px;
-    background: url("https://images.freeimages.com/fic/images/icons/2770/ios_7_icons/512/home.png");
+    background: url("/public/images/home_icon.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -76,15 +76,23 @@ header {
 #catalog {
     width: 50px;
     height: 50px;
-    background: url("https://cdn-icons-png.flaticon.com/512/80/80990.png");
+    background: url("/public/images/catalog_icon.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-#admin:hover, #account:hover, #home:hover, #catalog:hover {
-    opacity: 0.6;
+#login {
+    width: 50px;
+    height: 50px;
+    background: url("/public/images/login_icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
+
+#admin:hover, #account:hover, #home:hover, #catalog:hover, #login:hover {
+    opacity: 0.6;
+}
 #account, #admin {
     display: none;
 }
@@ -95,7 +103,7 @@ header {
     padding-top: 25px;
     text-decoration: none;
     transition: 0.8s;
-    color: white;
+    color:#333;
 }
 
 .nav-option a:hover {
@@ -320,6 +328,10 @@ footer {
     align-items: center;
     color: #333
 }
+
+footer a {
+    color: #333;
+  }
 
 footer .footer-info {
     color: #333
