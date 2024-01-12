@@ -1,75 +1,113 @@
-body {
-    font-family: Arial, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    width: 100%;
-    background-color: #ffffff;
 }
 
+/* #f1d8d8; */
 header {
     width: 100%;
-    background-color: #333;
+    background-color: #f1c4c4;
+    height: auto;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#img-logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+
+#img-logo:hover{
+    opacity: 0.6;
 }
 
 
 .nav {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction:row-reverse; 
-    position: relative;
-} 
-
-#img-logo {
-    position: absolute;
-    top: 0;
-    left: 20px;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
 }
 
-.nav-option {      
-    padding-right: 15px;
+.nav-option {
     font-size: 18px;
     text-align: center;
-    width: 60px;
     height: 30px;
     margin: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
 }
+
+#account {
+    width: 50px;
+    height: 50px;
+    background: url("https://static.thenounproject.com/png/3795046-200.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#admin {
+    width: 50px;
+    height: 50px;
+    background: url("/public/images/icon-admin.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#home {
+    width: 50px;
+    height: 50px;
+    background: url("https://images.freeimages.com/fic/images/icons/2770/ios_7_icons/512/home.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#catalog {
+    width: 50px;
+    height: 50px;
+    background: url("https://cdn-icons-png.flaticon.com/512/80/80990.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#admin:hover, #account:hover, #home:hover, #catalog:hover {
+    opacity: 0.6;
+} 
+
+#account, #admin {
+    display: none;
+}
+
 
 .nav-option a {
     font-size: 20px;
     padding-top: 25px;
     text-decoration: none;
     transition: 0.8s;
-    color: white
-    
+    color: white;
 }
 
 .nav-option a:hover {
-    color: gray
+    color: gray;
 }
 
-@media screen and (max-width: 400px) {
-     .nav {
-        position: relative;
-        flex-direction: column;
-    }
-
-    #img-logo {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-    } 
-}
 
 main {
-    overflow: hidden;
-    height: 80%;
-    background: url("https://wallpaperaccess.com/full/6263243.jpg");
-    background-position: 10%;
-    background-repeat: no-repeat;
+    min-height: 100vh;
+    background: url("/public/images/catalog-background.jpg");
     background-size: cover;
-
+    background-repeat: no-repeat;
 }
 
 
@@ -131,11 +169,12 @@ main {
 
 }
 
+
 .controllers button {
     height: 50px;
     width: 25%;
     border: solid;
-    border-color: #fdfdfd;
+    border-color: #333;
     border-radius: 5px;
     background-color: #ffffff;
     margin-top: 2%;
@@ -148,12 +187,65 @@ main {
     background-color: gray;
 }
 
+
+#bookBorrowModal{
+    width: 0;
+    height: 50vh;
+    position: fixed;
+    top:30%;
+    left:10%;
+    z-index: 3;
+    overflow: hidden;
+    background: #fff5;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+
+#borrowing-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#borrowing-info input {
+    height: 30px;
+    width: 100%;
+}
+
+#borrow-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    width: 80%;
+    height: 40px;
+}
+
+#bookBorrowModal button {
+    border: none; 
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    width: 30%;
+    height: 100%;
+    margin: 2%;
+    transition: 0.7s;
+}
+
+#bookBorrowModal button:hover {
+    opacity: 0.6;
+}
+
 .books-preview {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    margin-top: 5%;
 }
 
 .books-preview  .item {
@@ -166,8 +258,9 @@ main {
     margin:20px;
     border:none;
     border-radius: 8%;
-    background-color: #333;
     transition: 0.6s;
+    background: #fff5;
+    backdrop-filter: blur(10px);
 }
 
 .books-preview .item .picture {
@@ -180,9 +273,25 @@ main {
 }
 
 .books-preview .item .info {
-    color:white;
+    color:#333;
     text-align: center; 
     width: 50%;
+}
+
+.info a {
+    color: white;
+    transition: 0.8s;
+}
+
+.info a:hover {
+    color:gray;
+    opacity: 0.8;
+}
+
+.books-preview .item:hover {
+    color:gray;
+    opacity: 0.9;
+    box-shadow: 5px 5px 5px 2px #333;
 }
 
 
@@ -220,34 +329,40 @@ main {
     }
 }
 
-.info a {
-    color: white;
-    transition: 0.8s;
-}
 
-.info a:hover {
-    color:gray;
-    opacity: 0.8;
-}
 
-.books-preview .item:hover {
-    color:gray;
-    opacity: 0.9;
-    box-shadow: 5px 5px 5px 2px #333;
-}
 
 footer {
     width: 100%;
-    height: 20%;
-    background-color: #333;
+    min-height: 20vh;
+    background-color: #f1c4c4;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    overflow: hidden;
+    align-items: center;
+    color: #333
 }
 
 footer .footer-info {
-    color: white;
-    overflow: hidden;
+    color: #333
+}
+
+
+@media screen and (max-width: 1024px) {
+    footer {
+        justify-content: left;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+
+    .books-preview  .item  {
+        background-color: #333;
+        backdrop-filter: none;
+    }
+
+    .books-preview .item .info {
+        color: white;
+    }
 }

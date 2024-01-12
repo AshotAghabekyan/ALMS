@@ -103,176 +103,68 @@ header {
 }
 
 
+
 main {
-    justify-content: space-between;
     display: flex;
     flex-direction: row;
-    background: url("/public/images/account_page_background.avif") 50% 50% / 50% no-repeat;
-    background-size: cover;
-}
-
-main ul, li {
-    margin: 0;
-    padding: 0;
-}
-
-main .user-options {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    background-color: #333;
-    opacity: 0.7;
-    padding: 0;
-}
-
-main .user-options #user-info {
-    display: flex;
-    flex-direction: column;
-    margin-left: 3%;
-    width: 30%;
-    color: white;
-}
-
-main .user-options #user-info ul p {
-    display: inline;
     flex-wrap: wrap;
+    background: url("/public/images/admin_page_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    min-height: 100vh;
 }
 
-main .user-options #user-info ul li {
-    display: inline;
-    list-style-type: none;
-    font-size: 19px;
-    line-height: 200%;
-}
 
-main .user-options #account-managment {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    color: white;
-}
-
-main .user-options #account-managment button {
-    width: 60%;
-    height: 20%;
-    margin-top: 3%;
-    font-size: 16px;
-    text-align: center;
-    cursor: pointer;
-    background-color: #333;
-    color: #ffffff;
-    padding: 10px 15px;
-    border-style: double;
-    border-radius: 10px;
-    transition: 0.6s;
-}
-
-main .user-options #account-managment button:hover {
-    opacity: 0.5;
-    background-color: gray;
-}
-
-#borrowedBooksPanel {
-    background: white;
-    position: fixed;
-    width: 0;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
+.books-managment, .users-managment {
+    width: 30%;
+    height: auto;
     background: #fff5;
     backdrop-filter: blur(10px);
-    min-height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    text-align: center;
-    transition: 0.2s;
-}
-
-#borrowedBooksPanel #closeBorrowedBooksPanel {
-    position: absolute;
-    top: 2%;
-    right: 5%;
-    width: 30px;
-    height: 30px;
-}
-#borrowedBooksPanel #closeBorrowedBooksPanel button {
-    background-color: #333;
-    color: white;
-    border: none;
-}
-
-
-#borrowedBooksPreview {
+    margin: 3% 0;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#borrowedBooksPreview  .item {
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 80%;
-    min-height: 200px;
-    margin:20px;
-    border:none;
-    border-radius: 8%;
+}
+
+.book-btn, .user-btn {
+    width: 90%;
+    height: 40px;
+    margin: 5% 0;
     transition: 0.6s;
-    background-color: #333;
 }
 
-#borrowedBooksPreview .item .picture {
-    width: 40%;
-    min-height: 150px;
-    margin: 2%;
-    background: url("https://i.postimg.cc/Sx8WvpsG/tanenbaum.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-#borrowedBooksPreview .item .info {
-    color:white;
-    text-align: center;
-    width: 50%;
-}
-
-#borrowedBooksPreview .item .info button {
+.book-btn button, .user-btn button {
     width: 100%;
-    height: 30px;
+    height: 100%;
+    font-size: 18px;
     border: none;
     border-radius: 5px;
-    background-color: white;
-} 
+    transition: 0.6s;
+    background-color: #333;
+    color: white;
+}
 
-#borrowedBooksPreview .item .info button:hover {
+.book-btn:hover, .user-btn:hover {
+    background-color: gray;
     opacity: 0.6;
 }
 
-#borrowedBooksPreview.item .info a {
-    color: white;
-    
-}
-
-#borrowedBooksPreview .item:hover {
-    color:gray;
-    opacity: 0.9;
-    box-shadow: 5px 5px 5px 2px #333;
-}
 
 
 
-#fullnameChangePanel, #passwordChangePanel, #deleteAccountPanel{
+
+
+
+#addBookForm, #deleteBookForm, #addAdminForm, #removeAdminForm, #banUserForm {
     width: 0;
-    position: fixed; 
+    position: absolute; 
     top: 0;
     left: 0;
     overflow: hidden; 
-    min-height: 100%;
+    transition: 0.5s;
+    min-height: 120vh;
     z-index: 3;
     background: #fff5;
     backdrop-filter: blur(10px);
@@ -293,16 +185,23 @@ main .user-options #account-managment button:hover {
         height: auto;
     }
 
-    main .user-options #account-managment button {
-        width: 100%;
+    .books-managment {
+        width: 80%;
+        backdrop-filter: none;
     }
 
-    #fullnameChangePanel, #passwordChangePanel, #deleteAccountPanel{
+    .users-managment {
+        width: 80%;
+        backdrop-filter: none;
+    }
+
+    #addBookForm, #deleteBookForm, #addAdminForm, #removeAdminForm, #banUserForm {
         width: 0;
         position: fixed; 
         top: 0;
         left: 0;
         overflow: hidden; 
+        transition: 0.5s;
         min-height: 100vh;
         z-index: 3;
         background: #fff5;
@@ -317,17 +216,36 @@ main .user-options #account-managment button:hover {
     
 }
 
-.inputBlock{
-    margin-top: 4%;
+#addBookForm .input {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#addBookForm .input input {
     width: 100%;
 }
 
 
-#fullnameChangePanel button, #passwordChangePanel button, #deleteAccountPanel button{
+.inputBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 5%;
+}
+
+#addBookForm p, #deleteBookForm p, #addAdminForm p, #removeAdminForm p, #banUserForm p {
+    margin: 0;
+    padding: 0;
+}
+
+#addBookForm button, #deleteBookForm button, #addAdminForm button, #removeAdminForm button, #banUserForm button {
     width: 100px;
     height: 40px;
     margin-top: 10%;
@@ -339,23 +257,28 @@ main .user-options #account-managment button:hover {
     color: #333;
 }
 
-
-#fullnameChangePanel input, #passwordChangePanel input, #deleteAccountPanel input{
+#addBookForm input, #deleteBookForm input, #addAdminForm input, #removeAdminForm input, #banUserForm input {
     width: 50%;
     height: 30px;
     border: solid;
     border-radius: 5px;
     transition: 0.7s;
 }
-#fullnameChangePanel button:hover, #passwordChangePanel button:hover, #deleteAccountPanel:hover {
+
+
+#banUserForm textarea {
+    border: solid;
+    border-radius: 5px;
+    transition: 0.7s;
+}
+
+#addBookForm button:hover, #deleteBookForm button:hover, #addAdminForm button:hover, #removeAdminForm button:hover, #banUserForm button:hover {
     background-color: gray;
 }
 
-#fullnameChangePanel input:hover, #passwordChangePanel input:hover, #deleteAccountPanel input:hover{
+#addBookForm input:hover, #deleteBookForm input:hover, #addAdminForm input:hover, #removeAdminForm input:hover, #banUserForm input:hover {
     opacity: 0.6;
 }
-
-
 
 footer {
     width: 100%;

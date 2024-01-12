@@ -7,14 +7,29 @@ body {
     background-color: #f9f9f9;
     }
 
-  header {
+header {
+    width: 100%;
+    background-color: #333;
+    height: auto;
+    overflow: hidden;
     display: flex;
     justify-content: center;
-    background-color:  #333;
-    color: white;
-    width: 100%;
-    height: 20%;
-  }
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#img-logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+
+#img-logo:hover{
+    opacity: 0.6;
+}
 
   main {
     background: url("https://i.postimg.cc/VN4XMkZw/login-background-image.jpg");
@@ -93,15 +108,11 @@ body {
     color:  #333
   }
 
-  #forgot-passwd:hover {
+  .helpers a:hover {
     opacity: 0.6;
   }
 
-
-  #registration:hover {
-    opacity: 0.6;
-  } 
-
+  
   footer {
       width: 100%;
       min-height: 55%;
@@ -118,3 +129,12 @@ body {
   footer ul li {
     list-style-type: none;
   }
+
+
+@media screen and (max-width: 1024px) {
+    footer {
+        justify-content: left;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

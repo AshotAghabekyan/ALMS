@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin-mode</title>
+</head>
+<body>
+    <link rel="stylesheet" href="/public/css/admin.css">
+    <header>
+        <div id="img-logo">
+            <img src="/public/images/academy.webp" width="150">
+        </div>
+        <div class="nav">
+            <div class="nav-option" id="account">
+                <a href="/auth/account"></a>
+            </div>
+            <div class="nav-option" id="admin">
+                <a href="/root/admin"></a>
+            </div>
+            <div class="nav-option" id="home">
+                <a href="/home"></a>   
+            </div>
+            <div class="nav-option" id="catalog">
+                <a href="/home/catalog"></a>
+            </div>
+            <div class="nav-option">
+                <a href="/auth/login" id="login">Login</a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="books-managment">
+            <h3>Books Managment</h3>
+            <div class="book-btn" id="add-book">
+                <button>add new book</button>
+            </div>
+            <div class="book-btn" id="delete-book">
+                <button>delete book</button>
+            </div>
+
+        </div>
+        <div class="users-managment">
+            <h3>Users & Admins Managment</h3>
+            <div class="user-btn" id="add-admin">
+                <button>add new admin</button>
+            </div>
+            <div class="user-btn" id="delete-admin">
+                <button>delete admin</button>
+            </div>
+            <div class="user-btn" id="ban-user">
+                <button>ban user</button>
+            </div>
+        </div>
+    </main>
+
+
+    <div id="controlPanels">
+        <div id="addBookForm">
+            <h2>Add Book</h2>
+            <form name="newBook">
+                <div class="input">
+                    <p>title</p>
+                    <input type="text" name="title" placeholder="title" required>
+                </div>
+                <div class="input">
+                    <p>author(s)</p>
+                    <input type="text" name="authors" placeholder="Name Surname" required>
+                </div>
+                <div class="input">
+                    <p>category</p>
+                    <input type="text" name="category" placeholder="Fiction, Programming etc" required>
+                </div>
+                <div class="input">
+                    <p>page count</p>
+                    <input type="number" name="pageCount" placeholder="only numbers" required>
+                </div>
+                <div class="input">
+                    <p>date of publishing</p>
+                    <input type="date", name="publishedYear">
+                </div>
+                <div class="input">
+                    <p>book's isbn</p>
+                    <input type="text" name="isbn", placeholder="for example '9789939753919'" required>
+                </div>
+                <div class="input">
+                    <p>publisher</p>
+                    <input type="text", name="publisher">
+                </div>
+                <div class="input">
+                    <p>language</p>
+                    <input type="text", name="language" placeholder="english, spanish etc">
+                </div>
+            </form>    
+            <div>
+                <button id="createBook" type="submit">Create Book</button>
+                <button id="cancel-add-book">cancel</button>
+            </div>
+        </div>
+
+        <div id="deleteBookForm">
+            <h2>Delete Book</h2>
+            <div class="inputBlock">
+                <p>Enter isbn of book</p>
+                <input type="text" id="isbnInput" placeholder="for example '9789939753919'">
+            </div>
+            <div>
+                <button id="confirm-delete-book">Delete Book</button>
+                <button id="cancel-delete-book">cancel</button>
+            </div>
+        </div>
+
+        <div id="addAdminForm">
+            <h2>Add Admin</h2>
+            <div class="inputBlock">
+                <p>Enter the email of the user you want to make an admin</p>
+                <input type="email" id="userEmail">
+            </div>
+            <div>
+                <button id="confirm-add-admin">add admin</button>
+                <button id="cancel-add-admin">cancel</button>
+            </div>
+        </div>
+
+        <div id="removeAdminForm">
+            <h2>Remove Admin</h2>
+            <div class="inputBlock">
+                <p>Enter the email of the admin you want remove</p>
+                <input type="email" id="adminEmail">
+            </div>
+            <div>
+                <button id="confirm-delete-admin">remove admin</button>
+                <button id="cancel-delete-admin">cancel</button>
+            </div>
+        </div>
+
+        <div id="banUserForm">
+            <h2>Ban User</h2>
+            <div class="inputBlock">
+                <p>Enter the email of the user you want ban</p>
+                <input type="email" id="bannedUserEmail">
+            </div>
+            <div class="inputBlock">
+                <p>Enter the reason for blocking the user</p>
+                <textarea rows="5" cols="30" id="banReasonDescription"></textarea>
+            </div>
+            <div>
+                <button id="confirm-ban-user">ban user</button>
+                <button id="cancel-ban-user">cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <ul><h3>Contact Us</h3>
+                <li>Azatutyan 24/17</li>
+                <li>Yerevan, Yerevan</li>
+                <li>Phone: (123) 456-7890</li>
+                <li>Email: info@academy.com</li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <ul><h3>Library Hours</h3>
+                <li>Monday - Friday: 9am - 5pm</li>
+                <li>Saturday: 10am - 4pm</li>
+                <li>Sunday: Closed</li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <ul><h3>Helpful Links</h3>
+                <li><a href="https://picsartacademy.am/">Academy Website</a></li>
+                <li><a href="https://www.facebook.com/PicsartArmenia">Facebook</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/public/js/admin.js" type="module"></script>
+</body>
+</html>

@@ -1,5 +1,6 @@
 "use strict"
-
+import { headerNavBar } from "./index.js";
+headerNavBar();
 
 let registrForm = document.forms.registr;
 registrForm.onsubmit = function (event) {

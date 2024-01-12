@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="/public/css/main.css">
-    <script src="/public/js/main.js" type="module"></script>
 </head>
 <body>
     <header>
+        <div id="img-logo">
+            <img src="/public/images/academy.webp" width="150">
+        </div>
         <div class="nav">
-            <img id="img-logo"  src="https://i.postimg.cc/g2YRctHV/picsart-academy-logo-resized.png">
-            <div class="nav-option">
-                <a href="/auth/login" id="login-logout">Login</a>
+            <div class="nav-option" id="account">
+                <a href="/auth/account"></a>
+            </div>
+            <div class="nav-option" id="admin">
+                <a href="/root/admin"></a>
+            </div>
+            <div class="nav-option" id="home">
+                <a href="/home"></a>   
+            </div>
+            <div class="nav-option" id="catalog">
+                <a href="/home/catalog"></a>
             </div>
             <div class="nav-option">
-                <a href="/home/catalog">Catalog</a>
-            </div>
-            <div class="nav-option">
-                <a href="/home">Home</a>
+                <a href="/auth/login" id="login">Login</a>
             </div>
         </div>
     </header>
@@ -34,7 +40,7 @@
         <div class="books-preview"></div>
 
         <div class="view-option">
-            <button id="view-all">View all</button>
+            <button id="view-more">View more</button>
         </div>
     </main>
 
@@ -57,13 +63,12 @@
         </div>
         <div class="footer-info">
             <ul><h3>Helpful Links</h3>
-                <li>Academy Website</li>
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>Feedback Form</li>
+                <li><a href="https://picsartacademy.am/">Academy Website</a></li>
+                <li><a href="https://www.facebook.com/PicsartArmenia">Facebook</a></li>
             </ul>
         </div>
     </footer>
-    <script src="/public/js/userAuthControl.js" type="module"></script>
+    <link rel="stylesheet" href="/public/css/main.css">
+    <script src="/public/js/main.js" type="module"></script>
 </body>
 </html>

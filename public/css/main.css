@@ -1,80 +1,116 @@
-body {
-    font-family: Arial, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    max-width: 100%;
 }
 
+
 header {
-    position: fixed;
-    left: 0;
-    top: 0;
     width: 100%;
-    background-color: #333;
-    z-index: 1;
+    background-color: #f1c4c4;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#img-logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+
+#img-logo:hover {
+    opacity: 0.6;
 }
 
 
 .nav {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction:row-reverse; 
+    justify-content: center;
+    align-items: center;
     padding: 5px;
-    position: relative;
-} 
-
-#img-logo {
-    position: absolute;
-    left: 20px;
+    width: 100%;
 }
 
-.nav-option {      
-    padding-right: 15px;
+.nav-option {
     font-size: 18px;
     text-align: center;
-    width: 60px;
     height: 30px;
     margin: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
 }
+
+#account {
+    width: 50px;
+    height: 50px;
+    background: url("https://static.thenounproject.com/png/3795046-200.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#admin {
+    width: 50px;
+    height: 50px;
+    background: url("/public/images/icon-admin.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#home {
+    width: 50px;
+    height: 50px;
+    background: url("https://images.freeimages.com/fic/images/icons/2770/ios_7_icons/512/home.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#catalog {
+    width: 50px;
+    height: 50px;
+    background: url("https://cdn-icons-png.flaticon.com/512/80/80990.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#admin:hover, #account:hover, #home:hover, #catalog:hover {
+    opacity: 0.6;
+}
+
+#account, #admin {
+    display: none;
+}
+
 
 .nav-option a {
     font-size: 20px;
     padding-top: 25px;
     text-decoration: none;
     transition: 0.8s;
-    color: white
-    
+    color: white;
 }
 
 .nav-option a:hover {
-    color:gray
+    color: gray;
 }
 
-@media screen and (max-width: 400px) {
-     .nav {
-        position: relative;
-        flex-direction: column;
-    }
-
-    #img-logo {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-    }
-    
-    main {
-        padding-top: 45%;
-    }
-}
 
 
 main {
-    background: url("https://i.postimg.cc/cLwSQCQ2/background-photo.jpg");
+    background: url("/public/images/home_page_background.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     min-width: 100%;
     max-width: 100%;
-    min-height:70%;
+    min-height: 80vh;
 }
 
 
@@ -110,7 +146,8 @@ main .welcome{
     border:none;
     border-radius: 8%;
     transition: 0.6s;
-    background-color: #333;
+    background: #fff5;
+    backdrop-filter: blur(10px);
 }
 
 .books-preview .item .picture {
@@ -123,14 +160,13 @@ main .welcome{
 }
 
 .books-preview .item .info {
-    color:white;
+    color:#333;
     text-align: center; 
     width: 50%;
 }
 
 .books-preview .item .info a {
-    color: white;
-    
+    color: white;  
 }
 
 .books-preview .item:hover {
@@ -144,33 +180,55 @@ main .welcome{
     justify-content: center;
 }
 
-#view-all {
-    height: 40px;
-    width: 30%;
-    background-color: #333;
-    color: white;
-    border:none;
+#view-more {
+    height: 50px;
+    width: 25%;
+    margin-bottom: 5%;
+    border: solid;
+    border-color: #333;
     border-radius: 5px;
-    margin-bottom: 3%;
+    background-color: #ffffff;
+    margin-top: 2%;
+    margin-left: 1%;
     transition: 0.8s;
 }
 
-#view-all:hover {
-    color:gray;
+#view-more:hover {
     opacity: 0.7;
+    background-color: gray;
 }
 
 footer {
     width: 100%;
-    min-height: 55%;
-    background-color: #333;
+    min-height: 20vh;
+    background-color: #f1c4c4;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    color: white;
+    align-items: center;
+    color: #333
 }
 
 footer .footer-info {
-    color: white;
+    color: #333
+}
+
+
+@media screen and (max-width: 1024px) {
+    footer {
+        justify-content: left;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+
+    .books-preview  .item  {
+        background-color: #333;
+        backdrop-filter: none;
+    }
+
+    .books-preview .item .info {
+        color: white;
+    }
 }

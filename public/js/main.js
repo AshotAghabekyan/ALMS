@@ -1,60 +1,50 @@
 "use strict"
+import { headerNavBar } from "./index.js";
+import { createBooksHTML } from "./index.js";
 
-async function getBooks() {
-    let response = await fetch("/books/getBooks");
-    return await response.json();
+headerNavBar()
+
+
+/**
+ * Fetches a specified number of random books from the server.
+ * Sends a POST request to "/books/random" with the specified count. 
+ * Expects a JSON response containing an array of random books. 
+ * Returns the array of random books.
+ */
+async function randomBooks(count) {
+    let response = await fetch("/books/random", {
+        method: "POST",
+        headers: {"Content-Type" : "application/json"},
+        body: JSON.stringify({"booksCount" : count}),
+    })
+    let parsedResponse = await response.json();
+    return parsedResponse.books;
 }
 
 
-async function createProducts(books) {
-    let loadedContent = 0;
 
-    return function (productCount) {
-        let bookPreview = document.querySelector(".books-preview");
-        let booksSlice = books.slice(loadedContent, loadedContent + productCount);
-
-        let elements = booksSlice.map(book => {
-            let item = document.createElement("div");
-            let picture = document.createElement("div");
-            let info = document.createElement("div");
-            item.className = "item";
-            picture.className = "picture";
-            info.className = "info";
-            let title = document.createElement("h3");
-            let author = document.createElement("p");
-
-            title.innerHTML = book.title;
-            author.innerHTML = book.authors.join(", ");
-
-            item.append(picture, info);
-            info.append(title, author);
-
-            item.addEventListener("click", function () {
-                window.location.href = `/books/book-details/${book.isbn}`;
-            });
-
-            return item;
-        });
-
-        bookPreview.append(...elements);
-
-        loadedContent += productCount;
-
-        if (loadedContent >= books.length) {
-            let viewAllButton = document.getElementById("view-all");
-            viewAllButton.style.display = "none";
-        }
-    };
+/**
+ * Displays a list of books on the web page.
+Clears the existing content in the ".books-preview" element.
+Calls createBooksHTML to generate HTML elements for the provided array of books.
+Appends the generated HTML elements to the ".books-preview" div.
+ */
+function displayRandomBooks(books) {
+    let bookPreview = document.querySelector(".books-preview");
+    bookPreview.innerHTML = "";
+    let booksContent = createBooksHTML(books);
+    bookPreview.append(...booksContent);
 }
-let books = await getBooks()
-let loadProduct = await createProducts(books);
-loadProduct(6);
+
+let books = await randomBooks(6);
+displayRandomBooks(books);
 
 
-function viewAllButton () {
+
+function redirectToCatalog() {
     window.location.href = "/home/catalog";
 }
 
-let seeMoreButton = document.getElementById("view-all");
-seeMoreButton.addEventListener("click", viewAllButton);
+let viewMoreBooks = document.getElementById("view-more");
+viewMoreBooks.addEventListener("click", redirectToCatalog);
 

@@ -1,4 +1,6 @@
 "use strict"
+import { headerNavBar } from "./index.js";
+headerNavBar();
 
 let loginForm = document.forms.login;
 loginForm.onsubmit = function(event) {
@@ -20,7 +22,7 @@ loginForm.onsubmit = function(event) {
     })
     .then(async (response) => {
         let parsedResponse = await response.json();
-        if (response.status == 200) {
+        if (response.status === 200) {
             return parsedResponse;
         } else {
             throw new Error(parsedResponse.message);
@@ -32,6 +34,5 @@ loginForm.onsubmit = function(event) {
     })
     .catch((err) => {
         alert(err.message);
-        window.location.href = "/auth/login";
     });
 }

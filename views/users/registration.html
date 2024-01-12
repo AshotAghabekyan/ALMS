@@ -8,8 +8,10 @@
 </head>
 <body>
     <header>
-        <img src="https://ltdfoto.ru/images/2023/12/13/picsart-transformed.png" width="150" alt="Academy Logo">
-      </header>
+        <div id="img-logo">
+            <img src="/public/images/academy.webp" width="150">
+        </div>
+    </header>
 
         <main>
           <form name="registr">
@@ -20,7 +22,7 @@
                 <label for="user-email">email</label>
                 <input type="email" placeholder="****@gmail.com" name="email" id="user-email" required>
 
-                <label for="password">password</label>
+                <label for="password">password (the password length must be more than 8 characters and less than 20 characters)</label>
                 <input type="text" placeholder="********" name="password" id="password" required>
 
                 <label for="label-repeat">confirm password</label>
@@ -52,13 +54,11 @@
               </ul>
           </div>
           <div class="footer-info">
-              <ul><h3>Helpful Links</h3>
-                  <li>Academy Website</li>
-                  <li>Facebook</li>
-                  <li>Twitter</li>
-                  <li>Feedback Form</li>
-              </ul>
-          </div>
+            <ul><h3>Helpful Links</h3>
+                <li><a href="https://picsartacademy.am/">Academy Website</a></li>
+                <li><a href="https://www.facebook.com/PicsartArmenia">Facebook</a></li>
+            </ul>
+        </div>
       </footer>
       <script src="/public/js/registration.js" type="module"></script>
 </body>

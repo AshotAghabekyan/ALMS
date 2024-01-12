@@ -10,7 +10,9 @@
 
 <body>
   <header>
-    <img src="https://ltdfoto.ru/images/2023/12/13/picsart-transformed.png" width="150" alt="Academy Logo">
+    <div id="img-logo">
+      <img src="/public/images/academy.webp" width="150">
+    </div>
   </header>
 
   <main>
@@ -24,6 +26,7 @@
 
       <div class="helpers">
         <a id="forgot-passwd" href="#">Forgot password</a>
+        <a id="toHome" href="/home">Guest</a>
         <a id="registration" href="/auth/registration">Registration</a>
       </div>
     </form>
@@ -45,14 +48,12 @@
             <li>Sunday: Closed</li>
         </ul>
     </div>
-    <div>
-        <ul><h3>Helpful Links</h3>
-            <li>Academy Website</li>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Feedback Form</li>
-        </ul>
-    </div>
+    <div class="footer-info">
+      <ul><h3>Helpful Links</h3>
+          <li><a href="https://picsartacademy.am/">Academy Website</a></li>
+          <li><a href="https://www.facebook.com/PicsartArmenia">Facebook</a></li>
+      </ul>
+  </div>
 </footer>
 </body>
 <script src="/public/js/login.js" type="module"></script>
