@@ -10,19 +10,20 @@ body {
     header {
       width: 100%;
       background-color: #f1c4c4;
-      height: auto;
+      height: 15vh;
       overflow: hidden;
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: center;
-  }
+   }
 
 
 #img-logo {
     width: 20%;
     display: flex;
     justify-content: center;
+    /* padding: 5%; */
     align-items: center;
     transition: 0.7s;
 }

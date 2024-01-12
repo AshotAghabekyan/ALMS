@@ -121,6 +121,7 @@ main {
     background: url("/public/images/catalog-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 

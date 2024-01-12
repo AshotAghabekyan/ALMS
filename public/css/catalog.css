@@ -18,6 +18,7 @@ header {
 
 
 #img-logo {
+    margin-left: 22%;
     width: 20%;
     display: flex;
     justify-content: center;
@@ -26,6 +27,7 @@ header {
 }
 
 #img-logo:hover{
+    cursor: pointer;
     opacity: 0.6;
 }
 
@@ -324,7 +326,8 @@ main {
 
 
 footer {
-    width: 100%;
+    width: 80%;
+    margin-left: 20%;
     min-height: 20vh;
     background-color: #f1c4c4;
     display: flex;
@@ -358,6 +361,10 @@ footer .footer-info {
     header, footer, main {
         margin-left: 0;
         width: 100%;
+    }
+
+    #img-logo {
+        margin-left: 0;
     }
 }
 

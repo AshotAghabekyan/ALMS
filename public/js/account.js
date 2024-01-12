@@ -44,7 +44,7 @@ Takes a menuId as a parameter and sets the width of the corresponding menu to "3
 */
 function openMenu(menuId) {
     let targetMenu = document.getElementById(menuId);
-    targetMenu.style.width = "400px";
+    targetMenu.style.width = "300px";
 }
 
 /**

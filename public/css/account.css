@@ -143,7 +143,7 @@ main .user-options #user-info {
     display: flex;
     flex-direction: column;
     margin-left: 3%;
-    width: 30%;
+    width: 100%;
     color: white;
 }
 
@@ -210,6 +210,10 @@ main .user-options #account-managment button:hover {
     right: 5%;
     width: 30px;
     height: 30px;
+}
+
+#borrowedBooksPanel  h2 {
+    margin-top: 20%;
 }
 
 #borrowedBooksPanel #closeBorrowedBooksPanel button {
@@ -302,45 +306,15 @@ main .user-options #account-managment button:hover {
 }
 
 
-@media screen and (max-width:700px) {
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: auto;
-    }
-
-    main .user-options #account-managment button {
-        width: 100%;
-    }
-
-    #fullnameChangePanel, #passwordChangePanel, #deleteAccountPanel{
-        width: 0;
-        position: fixed; 
-        top: 0;
-        left: 0;
-        overflow: hidden; 
-        min-height: 100vh;
-        z-index: 3;
-        background: #fff5;
-        backdrop-filter: blur(10px);
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: 0.5s;
-    }
-    
-}
-
 .inputBlock{
     margin-top: 4%;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-items: center;
     flex-direction: column;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 
@@ -393,6 +367,46 @@ footer a {
 footer .footer-info {
     color: #333
 }
+
+
+@media screen and (max-width:700px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+    }
+
+    main .user-options #account-managment button {
+        width: 100%;
+    }
+
+    #fullnameChangePanel, #passwordChangePanel, #deleteAccountPanel{
+        width: 0;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        overflow: hidden; 
+        min-height: 100vh;
+        z-index: 3;
+        background: #fff5;
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        transition: 0.5s;
+    }
+
+    #fullnameChangePanel input, #passwordChangePanel input, #deleteAccountPanel input {
+        width: 80%;
+    }
+    
+}
+
 
 @media screen and (max-width: 1024px) {
     header {
