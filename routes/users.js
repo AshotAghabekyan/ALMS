@@ -103,7 +103,6 @@ authRouter.post("/registration", isBanned, isValidRegistration, async function(r
         fullname : request.body.fullname
     }
     let result = await UserController.userRegistration(user);
-    console.log(result);
     return response.status(result.statusCode).json({message : result.message});
 })
 

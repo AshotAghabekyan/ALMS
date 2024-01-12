@@ -4,15 +4,15 @@ html, body {
     padding: 0;
 }
 
+/* #f1d8d8; */
 header {
-    width: 80%;
-    margin-left: 20%;
+    width: 100%;
     background-color: #f1c4c4;
     height: auto;
     overflow: hidden;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: right;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -32,10 +32,11 @@ header {
 
 .nav {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     padding: 5px;
     width: 100%;
+    height: 15vh;
 }
 
 .nav-option {
@@ -93,6 +94,11 @@ header {
 #admin:hover, #account:hover, #home:hover, #catalog:hover, #login:hover {
     opacity: 0.6;
 }
+
+#admin p, #account p, #home p, #catalog p, #login p {
+    margin-top: 100%;
+}
+
 #account, #admin {
     display: none;
 }
@@ -356,6 +362,20 @@ footer .footer-info {
 }
 
 @media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #img-logo {
+        margin-top: 2%;
+    }
+
+    .nav {
+        justify-content: center;
+        max-height: 12vh;
+    }
+
     footer {
         justify-content: left;
         align-items: flex-start;

@@ -1,9 +1,9 @@
 import {MongoClient} from "mongodb"
 
 
-let URI = process.env.URI;
+let mongoURI = process.env.MongoURI;
 export async function connectDatabase () {
-    let client = await MongoClient.connect(URI);
+    let client = await MongoClient.connect(mongoURI);
     console.log("successful connection to database");
     return client.db();
 }
