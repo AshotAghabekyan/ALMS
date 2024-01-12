@@ -23,7 +23,7 @@ app.use(session({
     saveUninitialized: false,
     cookie: {expires: new Date(253402300000000)},
     store: new MongoStore({
-        mongoUrl: "mongodb://0.0.0.0:27017/alms",
+        mongoUrl: process.env.MongoURI,
         collectionName: "user-sessions"
     })
 }))
