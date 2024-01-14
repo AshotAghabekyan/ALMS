@@ -16,13 +16,6 @@ async function getBookInfo(isbn) {
 }
 
 
-async function isBookAvailability(isbn) {
-    let response = await fetch(`/books/book_details/${isbn}/availability`);
-    let parsedResponse = await response.json();
-    return parsedResponse.availability;
-}
-
-
 /**
  * Displays details of the currently viewed book on the HTML page.
 Extracts the ISBN from the current URL, calls
@@ -51,7 +44,7 @@ async function displayBookDetails() {
         return;
     }
 
-    if (!await isBookAvailability(isbn)) {
+    if (!book.availability) {
         let borrowButton = document.getElementById("borrow-book");
         borrowButton.innerHTML = "book not available";
         borrowButton.disabled = true;
@@ -74,21 +67,23 @@ async function getRecomendedBooks() {
     let response = await fetch("/books/allbooks");
     let allBooks = await response.json();
 
+    let wordsToMatch = [];
+        targetBook.category.forEach(function(genre) {
+            wordsToMatch.push(...genre.toLowerCase().split(" "));
+        });
     let filteredBooks = allBooks.filter(function(candidateBook) {
         if (candidateBook.isbn === isbn) {
             return false;
         }
 
-        let wordsToMatch = [];
-        targetBook.category.forEach(function(genre) {
-            wordsToMatch.push(...genre.toLowerCase().split(" "));
-        });
         let coincidenceWordsCount = 0;
-        let candidateBookCategoryWords = candidateBook.category.join(" ").toLowerCase().split(" ");
+        let candidateBookGenres = candidateBook.category.join(" ").toLowerCase().split(" ");
         wordsToMatch.forEach(function(word) {
-            if (candidateBookCategoryWords.includes(word)) {
-                ++coincidenceWordsCount;
-            }
+            candidateBookGenres.forEach(function(candidateWord) {
+                if (word == candidateWord) {
+                    ++coincidenceWordsCount;
+                }
+            })
         });
 
         if (coincidenceWordsCount >= 2) {
@@ -142,7 +137,6 @@ closeBorrowMenu.addEventListener("click", function() {
 })
 
 
-
 async function borrowBook() {
     let hrefs = window.location.href.split("/");
     let isbn = hrefs[hrefs.length - 1];
@@ -167,18 +161,6 @@ confirmBorrowBook.addEventListener("click", function() {
     borrowBook();
 });
 
-
-async function deleteBorrowedBook() {
-    let hrefs = window.location.href.split("/");
-    let isbn = hrefs[hrefs.length - 1];
-
-    let response = await fetch(`/books/${isbn}/borrow`, {
-        method: "DELETE",
-    });
-    let parsedResponse = await response.json();
-    alert(parsedResponse.message);
-    window.location.reload();
-}
 
 
 

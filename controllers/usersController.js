@@ -40,7 +40,6 @@ export class UserController {
             let hasedPassword = await bcrypt.hash(user.password, 10);
             let newUser = new User(user.fullname, user.email, hasedPassword, 'user');
             let operationResult = await usersCollection.insertOne(newUser);
-            console.log(operationResult);
             if (operationResult.insertedId) {
                 return {
                     message: "Successful registration",

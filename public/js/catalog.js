@@ -80,13 +80,13 @@ filters.forEach((elem) => {
         event.preventDefault();
         let href = elem.getAttribute("href").split("/")
         let index = href.length - 1;
-        let genre = href[index];
+        let genre = href[index].toLowerCase();
         if (genre === "allBooks" ) {
             filteredArr = books;
         } 
         else {
             filteredArr = books.filter((book) => {
-                if(book.category.includes(genre)) {
+                if(book.category.join(" ").toLowerCase().split(" ").includes(genre)) {
                     return true;
                 }
             });

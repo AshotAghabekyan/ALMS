@@ -55,14 +55,6 @@ bookRouter.get("/:isbn", async function(request, response) {
 })
 
 
-
-bookRouter.get("/book_details/:isbn/availability", async function(request, response) {
-    let targetBook = await BookController.findBookByIsbn(request.params.isbn);
-    return response.json({"availability" : targetBook.availability});
-})
-
-
-
 bookRouter.post("/:isbn/borrow", checkBorrowDate, async function(request, response) {
     if (!request.session.user) {
         return response.status(401).json({message : "user not authorized"});

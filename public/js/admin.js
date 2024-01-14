@@ -13,7 +13,6 @@ function openMenu(menuId) {
 
 function closeMenu(menuId) {
     document.getElementById(menuId).style.width = "0";
-
 }
 
 
@@ -45,7 +44,7 @@ closeDeleteBookMenu.addEventListener("click", function() {
 Takes a book object, sends a POST request to "/root/books_management"
 with the book details, and returns the fetch promise.
  */
-function uploadBook (book) {
+function uploadBook(book) {
     return fetch("/root/books_managment", {
         method: 'POST',
         headers: {
@@ -181,7 +180,6 @@ confirmAdminAdd.addEventListener("click",  async function() {
 
 
 async function removeAdmin(email) {
-
     let response = await fetch("/root/admin_managment", {
         method: "DELETE",
         headers: {"Content-Type" : "application/json"},
@@ -190,9 +188,8 @@ async function removeAdmin(email) {
     let parsedResponse = await response.json();
     alert(parsedResponse.message);
     window.location.reload();
-
-        
 }
+
 
 let confirmAdminRemove = document.getElementById("confirm-delete-admin");
 confirmAdminRemove.addEventListener("click", async function() {

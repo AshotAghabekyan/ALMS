@@ -10,7 +10,6 @@ export let rootRouter = new Router();
  *  If not, it redirects to "/home".
  *  This assumes that user information is stored in the session. */
 rootRouter.use(async function(request, response, next) {
-    console.log(request.session.user);
     if (await UserController.isAdmin(request.session.user)) {
         next();
     } else {

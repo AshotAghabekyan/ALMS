@@ -255,7 +255,6 @@ accountDeletionConfirm.addEventListener("click", deleteUserAccount);
 
 
 
-
 //user logout
 let logoutButton = document.getElementById("logout");
 logoutButton.addEventListener("click", async function() {
